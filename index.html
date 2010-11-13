@@ -1,0 +1,100 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html 
+    PUBLIC "-//W3C//DTD XHTML 1.1//EN" 
+    "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+ <head>
+	 <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
+     <meta name="author" content="Arto Vuori" />
+     <title>~avuori</title>
+	 <link rel="stylesheet" href="../../default.css" type="text/css" />
+ </head>
+ <body>
+	 <h1>svnloganal &ndash; subversion log analyzer</h1>
+	 <h2>What? Que?</h2>
+	 <ul>
+		 <li>Collects various statistics from <a href='http://subversion.tigris.org/'>Subversion</a> logs and does fancy XHTML output</li>
+		 <li>Licensed under GPLv2</li>
+		 <li>Written in C</li>
+	 </ul>
+
+	 <h2>News</h2>
+	 <div class='miniblog'>
+		 <span>2009-02-21:</span>
+		 <p>Version 55 released (fixed a bug that caused segfaults on small inputs).
+		 I thank Guy Brand for the bugreport.</p>
+		 <span>2009-02-20:</span>
+		 <p>Version 54 released (mere minor bugfixes).</p>
+		 <span>2007-06-12:</span>
+		 <p>Google got us indexed.</p>
+		 <span>2007-06-04:</span>
+		 <p>First public version released. I started this project on December 2006 and went through an inactive period shortly after that. Now, finally after 5 months, I got it in a shape that it can be released, as it actually does its job. I hope somebody else finds it useful, too!
+		 </p>
+	</div>
+
+	 <h2>Dependencies</h2>
+	 <ul>
+		 <li><a href='http://xmlsoft.org/'>libxml2</a></li>
+	 </ul>
+
+	 <h2>Output Example</h2>
+	 <p>
+	 <a href='svnloganal-51.log.html'>svnloganal's svn log analyzed</a>
+	 </p>
+	 <h2>Download</h2>
+	 <p>
+	 [ <a href='svnloganal.55.tar.gz'>svnloganal.55.tar.gz</a> ]
+	 </p>
+	 <h2>Changelog</h2>
+	 <p>-
+	 </p>
+
+	 <h2>FAQ</h2>
+	 <p>
+	 <b>Q: </b>How do I use this program?<br />
+	 <b>A: </b><i>svnloganal --help</i>
+	 </p>
+
+	 <p>
+	 <b>Q: </b>I have problems compiling the program.<br />
+	 <b>A: </b>Ensure that the libxml2 headers are found from <i>/usr/include/libxml2/libxml</i>.<br />
+	 I used gcc (GCC) 4.1.2 to compile it.
+	 </p>
+
+	 <p>
+	 <b>Q: </b>Where can I report bugs to?<br />
+	 <b>A: </b>Check my <a href='../../'>homepage</a> for contact info.
+	 </p>
+
+	<p>
+	 <b>Q: </b>Why is it written in C? These programs are written in Python!<br />
+	 <b>A: </b>I wanted to write something in C, anything, and I needed this kind of software.</p>
+
+	 <p>
+	 <b>Q: </b>I have a great feature suggestion! Is this project still active?<br />
+     <b>A: </b>I probably don't need that feature myself, meaning, you have to make it yourself.
+	 </p>
+
+	 <p>
+	 <b>Q: </b>Why does it not understand the xml-formatted subversion log data but only reads flat, human-readable logs?<br />
+	 <b>A: </b>I was excessively lazy not to read <i>svn help log</i> before coding the parser. Now I don't need that feature &ndash; but you can do it!
+	 </p>
+
+	 <p>
+	 <b>Q: </b>Does the version numbering follow any logic?<br />
+	 <b>A: </b>They are simply revision numbers. (Update: I have migrated to git so now I'm just increasing the number every time I make a release.)
+	 </p>
+
+	 <p>
+	 <b>Q: </b> Why doesn't this work on French (or any non-English) locale?<br/>
+	 <b>A: </b> Because the adhoc parser is assuming English logs. Use an English locale when running <em>svn log</em>: e.g.: <em>LC_ALL=en_US svn -v log | ./svnloganal</em>.
+	 </p>
+
+	 <p style='margin-top: 2em'>
+	 <a href="http://validator.w3.org/check?uri=referer"><img
+			src="http://www.w3.org/Icons/valid-xhtml11"
+			alt="Valid XHTML 1.1" height="31" width="88" /></a>
+	</p>
+ </body>
+ </html>
+

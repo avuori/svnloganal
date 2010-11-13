@@ -1,0 +1,15 @@
+2009-02-20 | FIXED 2009-02-20
+    Two dereferencing bugs fixed
+
+2007-04-22 | FIXED 2007-06-04
+    Resources aren't freed when a parse error occurs :P
+
+2007-01-12 | FIXED 2007-04-24
+    crashes with exsvnlog3.log (segfault)
+
+2007-04-22 | FIXED 2007-04-22
+    valgrind shows errors with input file "logs/cmaxall.log"
+
+2007-04-21 | FIXED 2007-04-22
+    cmaxall.log shows that paths with spaces are handled as files 
+    (the front part). "8_Server Management" is a path!

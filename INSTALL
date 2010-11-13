@@ -1,0 +1,7 @@
+DEPENDENCIES:
+
+    libxml2
+
+INSTALLING:
+
+    make

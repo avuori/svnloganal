@@ -1,0 +1,19 @@
++------------------------------------------------------------+
+| svnloganal - Svn log analyzer                              |
+|                                                            |
+| svnloganal reads svn logs and generates fancy xhtml output.|
+| License: GPLv2                                             |
+|                                                            |
+| (c) 2007, Arto Vuori                                       |
++------------------------------------------------------------+
+
+Being lazy, this README won't tell much. If you need help,
+you are encouraged to check the faq at the svnloganal web site.
+
+Should you want to contact me considering this program, 
+my contact information can be found through the svnloganal web site
+as well.
+
+URI: http://www.cs.helsinki.fi/u/avuori/projects/svnloganal/
+
+For license info, see LICENSE.
